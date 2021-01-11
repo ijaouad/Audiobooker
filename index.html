@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AudioBooker | Audiobook Speed Calculator</title>
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Icon -->
+    <link rel="icon" href="Images/logo.png">
+
+</head>
+
+
+<body>
+
+    <div class="container">
+    
+        <nav>
+            <div class="logo">
+                <a href="">AudioBooker</a>
+            </div>
+           
+            <div class="navigation">
+                <ul>
+                    <li><a href="mailto:jad.contactme@gmail.com">Contact</a></li>
+                </ul>
+            </div>
+            
+        </nav>
+
+        <div class="header">
+            <h1>Audiobook Speed Calculator</h1>
+        </div>
+
+        <div class="audio-calculator">
+
+            <div class="input">
+                <label for="hours">Audiobook Hours:</label>
+                <input type="text" name="hours" id="hours">
+            </div>
+
+            <div class="input">
+                <label for="minutes">...Minutes:</label>
+                <input type="text" name="minutes" id="minutes">
+            </div>
+
+            <div class="input block">
+                <label for="playSpeed">Playback Speed:</label>
+                <input type="text" name="playSpeed" id="playSpeed" value="1">
+            </div>
+
+            <div class="result-speed">
+                <p>
+                    Listening Time:  
+                    <span id="resHours"></span>
+                    <span id="resMintutes" ></span>
+                </p>
+            </div>
+
+        </div>
+
+        <footer>
+            <p>© 2021 Audiobooker. by JAOUAD ICHI <a href="https://www.instagram.com/ichi.dev" target="_blank">@ichi.dev</a> with 💛</p>
+        </footer>
+    
+    </div>
+    
+    <script src="app.js" charset="UTF-8"></script>
+</body>
+</html>
