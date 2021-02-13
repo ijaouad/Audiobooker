@@ -1,6 +1,6 @@
 let inputHours = document.querySelector("#hours");
-inputHours.addEventListener('input', () => {
-    AudioCalculator();
+inputHours.addEventListener('input', (event) => {
+    AudioCalculator(event);
 });
 
 let inputMinutes = document.querySelector("#minutes");
@@ -13,13 +13,13 @@ inputSpeed.addEventListener('input', () => {
     AudioCalculator();
 });
 
-const AudioCalculator = () => {
+const AudioCalculator = (event) => {
     let hours = Number(document.querySelector("#hours").value);
     let minutes = Number(document.querySelector("#minutes").value);
     let playSpeed = Number(document.querySelector("#playSpeed").value);
 
     if (isNaN(hours) || isNaN(minutes) || isNaN(playSpeed)) {
-        return;
+        event.preventDefault();;
     }
 
     let totalMin = (hours * 60) + minutes;
