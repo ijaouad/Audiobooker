@@ -18,10 +18,6 @@ const AudioCalculator = (event) => {
     let minutes = Number(document.querySelector("#minutes").value);
     let playSpeed = Number(document.querySelector("#playSpeed").value);
 
-    if (isNaN(hours) || isNaN(minutes) || isNaN(playSpeed)) {
-        event.preventDefault();;
-    }
-
     let totalMin = (hours * 60) + minutes;
     
     let newSpeedMin = totalMin / playSpeed;
